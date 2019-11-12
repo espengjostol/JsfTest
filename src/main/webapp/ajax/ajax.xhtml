@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+<h:head/>
+<h:body>
+    <h:outputScript library="javax.faces" name="jsf.js" target="head"/>
+    <h:form>
+        <h:outputLink id="homelink" title="Home" value="../home.jsf" target="_self">
+            <h:outputFormat value="Go Ajax"/>
+            <f:ajax event="keydown" listener="#{ajaxHandler.act}"/>
+            <h:graphicImage title="ajax" alt="ajax" value="./ajax.png"/>
+        </h:outputLink>
+    </h:form>
+</h:body>
+</html>
